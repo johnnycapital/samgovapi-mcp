@@ -1,0 +1,25 @@
+{
+  "name": "samgovapi-mcp",
+  "version": "0.1.0",
+  "description": "Federal contracting data for Gemini CLI from samgovapi.io: SAM.gov entities (UEI, CAGE, registration status), contract opportunities, exclusions and USAspending awards.",
+  "mcpServers": {
+    "samgovapi": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "samgovapi-mcp"
+      ],
+      "env": {
+        "SAMGOVAPI_API_KEY": "$SAMGOVAPI_API_KEY"
+      }
+    }
+  },
+  "settings": [
+    {
+      "name": "API key",
+      "description": "samgovapi.io API key (free at https://samgovapi.io/sign-up). Optional for the search and sample tools.",
+      "envVar": "SAMGOVAPI_API_KEY",
+      "sensitive": true
+    }
+  ]
+}

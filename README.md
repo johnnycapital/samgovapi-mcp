@@ -103,3 +103,9 @@ MIT, Copyright (c) 2026 Stunning Couches LLC.
 - Hosted MCP endpoint (Streamable HTTP): `https://samgovapi.io/api/mcp`
 - npm: https://www.npmjs.com/package/samgovapi-mcp
 - MCP Registry name: `io.github.samgovapi/samgovapi`
+
+## Gemini CLI
+
+```sh
+gemini extensions install https://github.com/johnnycapital/samgovapi-mcp
+```
