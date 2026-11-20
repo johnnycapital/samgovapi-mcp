@@ -1,0 +1,55 @@
+{
+  "name": "samgovapi-mcp",
+  "version": "0.1.0",
+  "description": "MCP server (stdio) for samgovapi.io: SAM.gov entities, CAGE and UEI lookups, opportunities, exclusions and USAspending awards. search and fetch need no key.",
+  "mcpName": "io.github.samgovapi/samgovapi",
+  "type": "module",
+  "bin": {
+    "samgovapi-mcp": "bin/samgovapi-mcp.js"
+  },
+  "main": "./src/server.js",
+  "exports": {
+    ".": "./src/server.js",
+    "./package.json": "./package.json"
+  },
+  "files": [
+    "bin",
+    "src",
+    "README.md",
+    "LICENSE",
+    "server.json"
+  ],
+  "engines": {
+    "node": ">=18"
+  },
+  "scripts": {
+    "test": "node --test test/",
+    "test:live": "SAMGOVAPI_LIVE=1 node --test test/",
+    "prepublishOnly": "npm test"
+  },
+  "keywords": [
+    "mcp",
+    "model context protocol",
+    "mcp server",
+    "sam.gov",
+    "uei",
+    "cage code",
+    "federal contracting",
+    "usaspending",
+    "govcon",
+    "sam.gov api",
+    "government contracts api",
+    "federal contracts",
+    "sam.gov mcp"
+  ],
+  "homepage": "https://samgovapi.io/docs?utm_source=npm&utm_medium=package&utm_campaign=samgovapi-mcp",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/johnnycapital/samgovapi-mcp.git"
+  },
+  "bugs": {
+    "url": "https://github.com/johnnycapital/samgovapi-mcp/issues"
+  },
+  "author": "Stunning Couches LLC <support@samgovapi.io>",
+  "license": "MIT"
+}

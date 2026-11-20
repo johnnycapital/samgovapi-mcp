@@ -1,0 +1,43 @@
+{
+  "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
+  "name": "io.github.samgovapi/samgovapi",
+  "title": "samgovapi.io",
+  "description": "SAM.gov entities, UEI and CAGE lookups, opportunities, exclusions and USAspending awards.",
+  "version": "0.1.0",
+  "websiteUrl": "https://samgovapi.io",
+  "packages": [
+    {
+      "registryType": "npm",
+      "registryBaseUrl": "https://registry.npmjs.org",
+      "identifier": "samgovapi-mcp",
+      "version": "0.1.0",
+      "runtimeHint": "npx",
+      "transport": {
+        "type": "stdio"
+      },
+      "environmentVariables": [
+        {
+          "name": "SAMGOVAPI_API_KEY",
+          "description": "Optional. API key from https://samgovapi.io/dashboard/keys (free plan, no card). Without it only the keyless search and fetch tools are exposed.",
+          "isRequired": false,
+          "isSecret": true,
+          "format": "string"
+        }
+      ]
+    }
+  ],
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://samgovapi.io/api/mcp",
+      "headers": [
+        {
+          "name": "Authorization",
+          "description": "Optional. \"Bearer \" followed by an API key from https://samgovapi.io/dashboard/keys. search and fetch work without it.",
+          "isRequired": false,
+          "isSecret": true
+        }
+      ]
+    }
+  ]
+}
