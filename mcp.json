@@ -1,0 +1,14 @@
+{
+  "mcpServers": {
+    "samgovapi": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "samgovapi-mcp"
+      ],
+      "env": {
+        "SAMGOVAPI_API_KEY": "${SAMGOVAPI_API_KEY}"
+      }
+    }
+  }
+}

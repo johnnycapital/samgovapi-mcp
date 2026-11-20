@@ -1,0 +1,20 @@
+{
+  "name": "samgovapi-mcp",
+  "displayName": "samgovapi.io",
+  "version": "0.1.0",
+  "description": "Federal contracting data from samgovapi.io: SAM.gov entities (UEI, CAGE, registration status), contract opportunities, exclusions and USAspending awards.",
+  "author": {
+    "name": "samgovapi.io",
+    "url": "https://samgovapi.io"
+  },
+  "homepage": "https://samgovapi.io",
+  "repository": "https://github.com/samgovapi-mcp",
+  "license": "MIT",
+  "keywords": [
+    "mcp",
+    "sam-gov",
+    "federal-contracts",
+    "usaspending"
+  ],
+  "logo": "assets/logo.png"
+}
